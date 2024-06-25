@@ -7,7 +7,7 @@ import io
 from PIL import Image 
 import pdf2image
 import google.generativeai as genai  
-import docx
+#import docx    # Need to use this to implement docx file upload functionality 
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))    
 
