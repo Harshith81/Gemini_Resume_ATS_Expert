@@ -2,14 +2,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 import base64
-import streamlit as st
-import os
+import streamlit as st   
+import os     
 import io
 from PIL import Image 
 import pdf2image
-import google.generativeai as genai
+import google.generativeai as genai  
 
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))    
 
 def get_gemini_response(input,pdf_content,prompt):
     model=genai.GenerativeModel('gemini-pro-vision')
@@ -56,22 +56,34 @@ submit2 = st.button("What are the Strength's and Areas of Improvement ??")
 
 submit3 = st.button("Percentage Match of Applicant Resume with JD !!")
 
-input_prompt1 = """
-You are an experienced human resource manager with 20+ years of technical experience in any one of the job fields of Data Science, Machine Learning, Devops, Cloud Computing, FullStack Web Development and your main task is to review the provided resume aganist the job description provided for these profiles.
+# input_prompt1 = """
+# You are an experienced human resource manager with 20+ years of technical experience in any one of the job fields of Data Science, Machine Learning, Devops, Cloud Computing, FullStack Web Development and your main task is to review the provided resume aganist the job description provided for these profiles.
 
-First you need to mention the basic details of the candidate based on the resume like name, education, projects, experience in an ordered format.Then please share your detailed professional evaluation on whether the candidates profile aligns with the job role and also highlight the reasons for either selecting or rejecting the candidates application based on your evaluation.
+# First you need to mention the basic details of the candidate based on the resume like name, education, projects, experience in an ordered format.Then please share your detailed professional evaluation on whether the candidates profile aligns with the job role and also highlight the reasons for either selecting or rejecting the candidates application based on your evaluation.
+# """
+
+input_prompt1="""
+Extract technical skills, soft skills, education details, and experience/project information directly from the resume. Only include information explicitly stated in the resume for each category.
 """
+
+# input_prompt2="""
+# You are an experienced human resource manager with 20+ years of technical experience in any one of the job fields of Cloud Computing, Data Science, FullStack Web Development, Graphic Design, Machine Learning, Devops and your main task is to review the provided resume aganist the job description of these profiles according to the company requirements in current times.
+
+# Also you should identify and mention the strengths and the areas of development i.e weakness,  so that based on which the percentage of acceptance of the candidate will get increased in the future in relation to the specified job role, along with this you should provide some guidance on learning some in-demand skills & also advise the candidate by giving some important courses and projects recommendations that are having a great demand.
+# """
 
 input_prompt2="""
-You are an experienced human resource manager with 20+ years of technical experience in any one of the job fields of Cloud Computing, Data Science, FullStack Web Development, Graphic Design, Machine Learning, Devops and your main task is to review the provided resume aganist the job description of these profiles according to the company requirements in current times.
-
-Also you should identify and mention the strengths and the areas of development i.e weakness,  so that based on which the percentage of acceptance of the candidate will get increased in the future in relation to the specified job role, along with this you should provide some guidance on learning some in-demand skills & also advise the candidate by giving some important courses and projects recommendations that are having a great demand.
+Given a resume and a job description, generate a table illustrating the match. Use cues to represent high, medium, and low match areas, highlighting strengths and weaknesses.
 """
 
-input_prompt3 = """
-You are an Skilled ATS (Application Tracking System) scanner with a deep understanding of  Graphic Design, Machine Learning, Cloud Computing, Devops, Data Science, FullStack Web Development, Big Data Engineering and deep ATS functionality.
+# input_prompt3 = """
+# You are an Skilled ATS (Application Tracking System) scanner with a deep understanding of  Graphic Design, Machine Learning, Cloud Computing, Devops, Data Science, FullStack Web Development, Big Data Engineering and deep ATS functionality.
 
-Your task is to evaluate the resume aganist the provided job description and give me the percentage of match if the resume matches with the job description. First the output should come as percentage and then the keywords missing and at last give your final thoughts.  
+# Your task is to evaluate the resume aganist the provided job description and give me the percentage of match if the resume matches with the job description. First the output should come as percentage and then the keywords missing and at last give your final thoughts.  
+# """
+
+input_prompt3="""
+Analyze a resume and job description. Identify keywords and skills from the job description absent in the resume. Prioritize based on frequency and relevance to the job. Provide suggestions for integrating these keywords into the resume, emphasizing achievements and quantifiable results.    
 """
 
 if submit1:
@@ -101,7 +113,9 @@ elif submit3:
     else:
         st.write("Please Upload Your Resume or File Not Uploaded")      
 
-# These prompts worked well for me:
+
+
+
 
 # 1) Keypoints in my Resume
 # Extract technical skills, soft skills, education details, and experience/project information directly from the resume. Only include information explicitly stated in the resume for each category.
