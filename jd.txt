@@ -1,0 +1,43 @@
+JD-
+
+
+
+The finance industry has ignored billions of deserving individuals. We are a mission driven team of finance, analytics and technology professionals, focused on driving financial inclusion to serve the underserved across their credit, savings and financial needs.
+This role will lead a team of data scientists which is responsible for development, monitoring and driving continuous enhancements to create best in Class models/algorithms to assess risk, churn and uptake across the customer life cycle.
+ 
+What we look for: 
+Expertise in Big Data/ML: Should be able to build cutting edge credit/churn/usage models using advanced algorithms in a big data/Machine Learning environment. Should have hands on experience and track record of delivering projects in individual capacity.
+Process oriented: Should help in building a process that maximizes operating efficiency while maintaining risk across multiple lending cycles. There needs to be an obsession with collecting and analyzing data to drive business iterations and improvements. 
+Team Leadership: Should have a track record of leading people effectively functionally driving deliverables as well as nurturing, motivating, and developing the team to drive employee engagement. 
+Willingness to go above and beyond: For start-ups, the responsibilities and needs of the business change quickly. We're looking for someone who is not afraid to take on calculated risks and can deal with ambiguity.
+ 
+Job Responsibilities:
+
+Own the end-to-end delivery of models/algorithms across customer life cycle; Develop innovative credit risk / churn / usage models using mobile wallet transaction data, Call data, Telecom usage data, customer bureau data etc.
+Define a roadmap for data collection across telcos, credit bureaus, merchant partners & other 3rd party data sources; deliver on prioritized initiatives to continuously refine models
+Partner with the Data Engineering team to define the required data pipelines to build and enhance the feature bank (foundational capability) to build/deploy the various ML algorithms both for batch and real time use cases.
+Collaborate with credit policy/portfolio mgmt. team to drive P&L outcomes.
+Building reports for model monitoring and drive enhancements 
+Required Qualifications & Skills:
+
+ 
+Solid expertise in end-to-end risk model lifecycle management (develop, deploy, monitor)
+Previous hands on in credit, fraud, churn model development and deployment
+Previous experience in PD/EAD/LGD model development/validation
+Experience in CSI/PSI model monitoring process.
+
+
+Hands on experience in data extraction using SQL/Pyspark SQL; data cleaning, feature creation and building models using Py Spark/Python on Spark; Scale will be a plus. 
+Experience leading a data science team with functional ownership/responsibilities.
+Previous exposure to below algorithms (preferably multiple):
+Logistic Regression  
+Random forest
+XGBOOST
+Markov Chain
+PSI/CSI for model monitoring
+Strategy performance tracking and swap in / swap out analysis.
+Strong entrepreneurial drive.
+Good to have:
+Good business understanding of the fintech/consumer finance space.
+Experience in working with credit card / personal lending space, esp fintech.
+hands on experience in working with Telecom data.
